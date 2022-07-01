@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Set next line to your Wolf CMS root - if not in subdir, then just /
+    RewriteBase /jerrymarie/
+
+    # RewriteCond %{HTTP_HOST} !^$
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+    # RewriteCond %{HTTPS}s ^on(s)|
+    # RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    # Main URL rewriting.
+    RewriteRule ^(.*)$ index.php?PAGE=$1 [L,QSA]
+</IfModule>

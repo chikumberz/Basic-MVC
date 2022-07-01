@@ -1,0 +1,86 @@
+.speedtest {
+
+}
+
+	.speedtest .speedtest-title {
+		color: #333333;
+		font-weight: normal;
+	}
+
+	.speedtest .speedtest-meter {
+		color: #17a2b8;
+		font-size: 26px;
+	}
+
+	.speedtest .speedtest-meter.ms:after {
+		color: #858796;
+		content: 'ms';
+		font-size: 1rem;
+		margin-left: 0.2rem;
+	}
+
+	.speedtest .speedtest-meter:empty:before {
+    	content: '0.00';
+	}
+
+	.speedtest .speedtest-canvas-container {
+		position: relative;
+		width: 260px;
+		height: 200px;
+	}
+
+	.speedtest .speedtest-canvas-container canvas {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.speedtest .speedtest-canvas-container .speedtest-meter {
+		width: 100%;
+		font-size: 40px;
+		color: #333333;
+		position: absolute;
+		left: 0;
+		bottom: 1.55em;
+		z-index: 9;
+	}
+
+	.speedtest .speedtest-canvas-container .speedtest-unit {
+		color: #858796;
+		position: absolute;
+		left: 0;
+		bottom: 2em;
+		width: 100%;
+		z-index: 9;
+	}
+
+	.speedtest .speedtest-ip {
+		padding: 10px;
+	}
+
+	.speedtest .speedtest-ip:empty:before {
+		content: '0.0.0.0';
+	}
+
+	.speedtest .btn-speedtest {
+		width: 300px;
+	}
+
+	.speedtest .btn-speedtest:before {
+		content: 'Start Network Test';
+	}
+
+	.speedtest .btn-speedtest.running {
+	    color: #ffffff;
+	    border-color: #dc3545;
+	    background-color: #dc3545;
+	}
+
+	.speedtest .btn-speedtest.running:before {
+		content: 'Abort';
+	}

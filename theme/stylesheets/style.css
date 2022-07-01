@@ -1,0 +1,83 @@
+body {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	font-family: Roboto;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3.8rem; }
+h3 { font-size: 3.3rem; }
+h4 { font-size: 2.8rem; }
+h5 { font-size: 2.3rem; }
+h6 { font-size: 1.8rem; }
+
+input.form-control {
+	height: 100px;
+	font-size: 1.8rem;
+}
+
+.wrapper {
+	padding: 7rem 3rem;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 3.5rem 3rem 10rem;
+	margin: 0 auto;
+}
+
+.bg-header { background: url( '../images/bg-header.jpg' ) no-repeat center top; background-size: cover; }
+.bg-content { background: url( '../images/bg-content.jpg' ) no-repeat center center; background-size: cover; }
+.bg-2ac1bc { background: #2ac1bc; }
+.bg-f5f5f5 { background: #f5f5f5; }
+.bg-ffe0a2 { background: #ffe0a2; }
+
+.c-ffffff { color: #ffffff; }
+.c-606466 { color: #606466; }
+.c-2ac1bc { color: #2ac1bc; }
+.c-ff3d5c { color: #ff3d5c; }
+
+.mt-5r { margin-top: 5rem !important; }
+.mb-5r { margin-bottom: 5rem !important; }
+
+.header-title {
+	font-weight: normal;
+	text-align: center;
+    color: #ffffff;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+}
+
+.btn-apply {
+	font-size: 38px;
+    color: #ffffff;
+    background-color: #ff3d5c;
+    padding: 20px 130px;
+    margin: 0 auto;
+
+	border-radius: 80px;
+	-moz-border-radius: 80px;
+	-webkit-border-radius: 80px;
+}
+
+.btn-submit {
+	color: #ffffff;
+	background: #2ac1bc;
+	font-size: 1.8rem;
+	padding: 30px 130px;
+}
+
+.flickity-page-dots {
+	bottom: -40px;
+}
+
+.flickity-page-dots .dot.is-selected {
+	background: #2ec2bd;
+}
+
+
+@media ( min-width: 576px ) {
+	.modal-dialog {
+    	max-width: 96%;
+	}
+}

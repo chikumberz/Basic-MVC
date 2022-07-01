@@ -1,0 +1,12 @@
+.content-wrapper {
+    padding: 2rem;
+}
+
+.wrapper {
+	display: block;
+	height: 100%;
+}
+
+.main {
+    overflow-x: auto;
+}

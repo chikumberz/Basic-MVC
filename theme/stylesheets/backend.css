@@ -1,0 +1,273 @@
+body {
+	margin: 0;
+	font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.text-gray-400 { color: #d1d3e2 !important; }
+.text-gray-600 { color: #858796 !important; }
+.text-gray-800 { color: #5a5c69 !important; }
+
+.wrapper {
+	display: flex;
+	height: 100%;
+}
+
+	.animated--grow-in,
+	.sidebar .nav-item .collapse {
+	    -webkit-animation-name: growIn;
+	    animation-name: growIn;
+	    -webkit-animation-duration: .2s;
+	    animation-duration: .2s;
+	    -webkit-animation-timing-function: transform cubic-bezier( .18, 1.25, .4, 1 ), opacity cubic-bezier( 0, 1, .4, 1 );
+	    animation-timing-function: transform cubic-bezier( .18, 1.25, .4, 1), opacity cubic-bezier( 0, 1, .4, 1 );
+	}
+
+	.sidebar {
+		width: 15rem;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background-color: #6f66cc;
+        background-image: -webkit-linear-gradient(#b561eb 10%, #6772e5 100%);
+        background-image: -o-linear-gradient(#b561eb 10%, #6772e5 100%);
+        background-image: linear-gradient(#b561eb 10%, #6772e5 100%);
+	    background-size: cover;
+	}
+
+		.sidebar .sidebar-brand {
+			text-decoration: none;
+		    font-size: 1rem;
+		    font-weight: 800;
+		    padding: 1.5rem 1rem;
+		    text-align: center;
+		    letter-spacing: .05rem;
+		}
+
+			.sidebar .sidebar-brand .sidebar-brand-icon {
+
+			}
+
+			.sidebar .sidebar-brand .sidebar-brand-text {
+				color: #ffffff;
+				margin: 0 1rem;
+				display: none;
+			}
+
+		.sidebar .sidebar-divider {
+			margin: 0 1rem;
+			border-top: 1px solid rgba( 255, 255, 255, .15 );
+		}
+
+		.sidebar .sidebar-divider.mb-1 {
+			margin-bottom: 1rem !important;
+		}
+
+		.sidebar .nav-item .nav-link {
+	        display: block;
+		    text-align: left;
+		    padding: 1rem;
+		    display: block;
+		    color: rgba( 255, 255, 255, .8 );
+		    position: relative;
+		}
+
+		.sidebar .nav-item .nav-link.active {
+			color: #6f66cc;
+			position: relative;
+			padding: 0.5rem;
+			margin: 0.5rem 0 0.5rem 0.5rem;
+			background-color: #f8f9fc;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+		}
+
+		.sidebar .nav-item .nav-link.active:before {
+		    content: '';
+		    width: 25px;
+		    height: 30px;
+		    position: absolute;
+		    top: -26px;
+		    right: 0px;
+		    background-image: radial-gradient( circle at -2% 2%, rgba( 204, 0, 0, 0 ) 25px, #f8f9fc 26px );
+		}
+
+		.sidebar .nav-item .nav-link.active:after {
+		    content: '';
+		    width: 25px;
+		    height: 30px;
+		    position: absolute;
+		    bottom: -25px;
+		    right: 0px;
+		    background-image: radial-gradient( circle at -2% 102%, rgba( 204, 0, 0, 0 ) 25px, #f8f9fc 26px );
+		}
+
+		.sidebar .nav-item .nav-link:hover {
+			color: #ffffff;
+		}
+
+		.sidebar .nav-item .nav-link.active:hover {
+			color: #b561eb;
+		}
+
+			.sidebar .nav-item .nav-link i {
+			    width: 20px;
+			    margin-right: 0.2rem;
+			    font-size: .85rem;
+			    text-align: center;
+			}
+
+		.sidebar .nav-item .nav-link.collapsed i.fa-angle-up:before {
+			content: '\f107';
+		}
+
+		.sidebar .nav-item.active .nav-link {
+
+		}
+
+		.sidebar .sidebar-heading {
+		    padding: 0 1rem;
+		    text-align: left;
+		    font-size: 11px;
+		    font-weight: 800;
+		    color: rgba( 255, 255, 255, .4 );
+		}
+
+		.sidebar .nav-item .sidebar-sub {
+			margin: 0rem;
+		}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner {
+			    padding: 0;
+			    margin: 0;
+			    margin-bottom: 1rem;
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-header {
+				margin: 0;
+			    white-space: nowrap;
+			    padding: .5rem 1.5rem 0.5rem 2rem;
+			    text-transform: uppercase;
+			    font-weight: 800;
+			    font-size: .65rem;
+			    color: #b7b9cc;
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item {
+				padding: .5rem 1rem .5rem 2.7rem;
+			    margin: 0;
+			    display: block;
+			    text-decoration: none;
+			    font-size: 1rem;
+			    white-space: nowrap;
+			    color: rgba( 255, 255, 255, .8 );
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item.active {
+			    color: #6f66cc;
+			    position: relative;
+			    padding-left: 0.7rem;
+			    margin: 0rem 0 0rem 2rem;
+			    background-color: #f8f9fc;
+			    border-top-left-radius: 30px;
+			    border-bottom-left-radius: 30px;
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item.active:before {
+			    content: '';
+			    width: 25px;
+			    height: 30px;
+			    position: absolute;
+			    top: -26px;
+			    right: 0px;
+			    background-image: radial-gradient( circle at -2% 2%, rgba( 204, 0, 0, 0 ) 25px, #f8f9fc 26px );
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item.active:after {
+			    content: '';
+			    width: 25px;
+			    height: 30px;
+			    position: absolute;
+			    bottom: -25px;
+			    right: 0px;
+			    background-image: radial-gradient( circle at -2% 102%, rgba( 204, 0, 0, 0 ) 25px, #f8f9fc 26px );
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item:hover {
+				color: #ffffff;
+			}
+
+			.sidebar .nav-item .sidebar-sub .collapse-inner .collapse-item.active:hover {
+				color: #b561eb;
+			}
+
+.main {
+	background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+	.header {
+		padding: 0 1rem;
+		margin-bottom: 1.5rem;
+		background-color: #ffffff;
+	}
+
+	.content-wrapper {
+	    padding: 2rem 4rem;
+	}
+
+	.content {
+
+	}
+
+.calendar {
+	width: 100%;
+}
+
+	.calendar tr th,
+	.calendar tr td {
+		padding: 10px;
+	}
+
+	.calendar tr th {
+		width: 14.28%;
+	}
+
+	.calendar tr td {
+		vertical-align: top;
+		height: 150px;
+		border: 1px solid #dcdcdc;
+	}
+
+	.calendar tr td:first-child {
+		background: #fff2f4;
+	}
+
+	.calendar tr td:last-child {
+		background: #f9faff;
+	}
+
+		.calendar tr td .calendar-day {
+			text-align: right;
+		}
+
+		.calendar tr td .calendar-schedule {
+			text-align: left;
+			padding: 10px 0px;
+			border-bottom: 1px dashed #dcdcdc;
+		}
+
+		.calendar tr td .calendar-schedule:last-child {
+			border: none;
+		}
+
+		.calendar tr td .calendar-schedule h6 {
+			font-weight: normal;
+		}
